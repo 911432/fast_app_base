@@ -8,9 +8,9 @@ class FavoriteFragment extends StatelessWidget {
   final bool isShowBackButton;
 
   const FavoriteFragment({
-    Key? key,
+    super.key,
     this.isShowBackButton = true,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

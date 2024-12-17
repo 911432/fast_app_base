@@ -9,8 +9,8 @@ import '../../../dialog/d_confirm.dart';
 
 class HomeFragment extends StatelessWidget {
   const HomeFragment({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

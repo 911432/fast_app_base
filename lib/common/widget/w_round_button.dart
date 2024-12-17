@@ -58,12 +58,11 @@ class RoundButton extends StatefulWidget {
       this.leftWidget,
       this.rightWidget,
       this.textAlign = TextAlign.start,
-      Key? key})
+      super.key})
       : shadowColor = shadowColor ?? theme?.shadowColor ?? Colors.transparent,
         textColor = textColor ?? theme?.textColor ?? Colors.white,
         bgColor = bgColor ?? theme?.bgColor ?? AppColors.blue,
-        borderColor = borderColor ?? theme?.borderColor ?? Colors.transparent,
-        super(key: key);
+        borderColor = borderColor ?? theme?.borderColor ?? Colors.transparent;
 
   @override
   RoundButtonState createState() => RoundButtonState();

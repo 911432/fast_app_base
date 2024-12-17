@@ -1,6 +1,7 @@
 ///Dialog barrierDismissible 위한 Scaffold (From Flutter Framework)
 ///
 ///Material type: MaterialType.transparency 적용
+library;
 
 // Copyright 2014 The Flutter Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
@@ -27,7 +28,7 @@ const FloatingActionButtonLocation _kDefaultFloatingActionButtonLocation =
 const FloatingActionButtonAnimator _kDefaultFloatingActionButtonAnimator =
     FloatingActionButtonAnimator.scaling;
 
-const Curve _standardBottomSheetCurve = standardEasing;
+const Curve _standardBottomSheetCurve = Easing.legacy;
 // When the top of the BottomSheet crosses this threshold, it will start to
 // shrink the FAB and show a scrim.
 const double _kBottomSheetDominatesPercentage = 0.3;
@@ -2970,8 +2971,6 @@ class ScaffoldFeatureController<T extends Widget, U> {
   final StateSetter? setState;
 }
 
-// TODO(guidezpl): Look into making this public. A copy of this class is in
-//  bottom_sheet.dart, for now, https://github.com/flutter/flutter/issues/51627
 /// A curve that progresses linearly until a specified [startingPoint], at which
 /// point [curve] will begin. Unlike [Interval], [curve] will not start at zero,
 /// but will use [startingPoint] as the Y position.

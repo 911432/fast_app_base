@@ -29,7 +29,7 @@ class TextFieldWithDelete extends StatefulWidget {
   final Function()? onTapDelete;
 
   const TextFieldWithDelete(
-      {Key? key,
+      {super.key,
       this.focusNode,
       required this.controller,
       this.obscureText = false,
@@ -50,8 +50,7 @@ class TextFieldWithDelete extends StatefulWidget {
       this.leftImage,
       this.onTapDelete,
       this.showMaxCount,
-      this.autofocus})
-      : super(key: key);
+      this.autofocus});
 
   @override
   TextFieldWithDeleteState createState() => TextFieldWithDeleteState();

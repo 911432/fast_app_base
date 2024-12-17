@@ -20,7 +20,7 @@ class TextBadge extends StatelessWidget {
   static Color defaultBorderProvider() => Colors.transparent;
 
   const TextBadge({
-    Key? key,
+    super.key,
     required this.text,
     this.backgroundColor,
     this.textColor,
@@ -31,7 +31,7 @@ class TextBadge extends StatelessWidget {
     this.rightWidget,
     this.onTap,
     this.boder,
-  }) : super(key: key);
+  });
 
   TextBadge.theme(
     TextBadgeTheme theme, {
